@@ -1,0 +1,16 @@
+/* Vars */
+:root {
+	--accent: #CC4444;
+}
+
+/* Classes */
+.img-thumbnail {
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
+}
+
+/* IDs
+#header {
+  background-color: var(--accent);
+}*/
