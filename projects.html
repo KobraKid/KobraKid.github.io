@@ -17,8 +17,8 @@
     <!-- Custom stylesheets-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  	<link href="style.css" rel="stylesheet" />
-  	<script type="text/javascript" src="main.js"></script>
+  	<link href="stylesheets/style.css" rel="stylesheet" />
+  	<script type="text/javascript" src="scripts/main.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
@@ -26,7 +26,6 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
@@ -41,66 +40,14 @@
         </ul>
       </div>
     </nav>
-    <div class="container">
-      <div id="content" class="content">
+    <div class="container-fluid">
+      <div id="content" class="row justify-content-center">
         <div class="card-columns">
-          <div class="card text-white bg-dark" style="width: 18rem;">
-            <div class="card-header">
-              December 2018
-            </div>
-            <img src="projects/kickstarter/kickstarter.png" class="card-img-top" alt="kickstarter.png">
-            <div class="card-body">
-              <h5 class="card-title">Kickstarter Project Evaluator</h5>
-              <p class="card-text">Our task was to predict the success of a Kickstarter project based on its initial conditions, such as category and funding goal.</p>
-              <a href="#" class="btn btn-primary">More details</a>
-            </div>
-          </div>
-          <div class="card text-white bg-dark" style="width: 18rem;">
-            <div class="card-header">
-              May 2018
-            </div>
-            <img src="projects/hackathon/wirelesskeyboard.png" class="card-img-top" alt="wirelesskeyboard.png">
-            <div class="card-body">
-              <h5 class="card-title">Wireless Keyboard BadHack</h5>
-              <p class="card-text">A voice-controlled keyboard combined with a gestured-controlled mouse, developed during NU BadHacks 2018.</p>
-              <a href="#" class="btn btn-primary">More details</a>
-            </div>
-          </div>
-          <div class="card text-white bg-dark" style="width: 18rem;">
-            <div class="card-header">
-              April 2018
-            </div>
-            <img src="projects/catcal/catcal.png" class="card-img-top" alt="catcal.png">
-            <div class="card-body">
-              <h5 class="card-title">CatCal</h5>
-              <p class="card-text">A group scheduling app for iOS. MVP won 3<sup>rd</sup> place at Northwestern's .dev showcase.</p>
-              <a href="#" class="btn btn-primary">More details</a>
-            </div>
-          </div>
-          <div class="card text-white bg-dark" style="width: 18rem;">
-            <div class="card-header">
-              March 2018
-            </div>
-            <img src="projects/journalplusplus/journal.png" class="card-img-top" alt="journal.png">
-            <div class="card-body">
-              <h5 class="card-title">JournalPlusPlus</h5>
-              <p class="card-text">A digital bullet journal meant to facilitate productivity and creativity.</p>
-              <a href="#" class="btn btn-primary">More details</a>
-            </div>
-          </div>
-          <div class="card text-white bg-dark" style="width: 18rem;">
-            <div class="card-header">
-              March 2018
-            </div>
-            <img src="projects/malloc/malloc.png" class="card-img-top" alt="malloc.png">
-            <div class="card-body">
-              <h5 class="card-title">Malloc Lab</h5>
-              <p class="card-text">Class assignment to program our own implementation of the malloc function in the C programming language.</p>
-              <a href="#" class="btn btn-primary">More details</a>
-            </div>
-          </div>
         </div>
       </div>
+    </div>
+    <div class="scripts">
+      <script src="scripts/cards.js"></script>
     </div>
   </body>
 </html>
