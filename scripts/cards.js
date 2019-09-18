@@ -31,7 +31,7 @@ var projects = [
     date: "March 2018",
     image: "projects/journalplusplus/journal.png",
     title: "JournalPlusPlus",
-    text: "A digital bullet journal meant to facilitate productivity and creativity.",
+    text: "A digital bullet journal for facilitating productivity and creativity, developed as a class project.",
     link: "#"
   },
   {
