@@ -44,7 +44,7 @@ var projects = [
 ];
 
 for (var i = 0; i < projects.length; i++) {
-  $("#content div").first().append("\
+  $("#projects-content div div div").first().append("\
     <div class='card text-white bg-dark'>\
       <div class='card-header'>" + projects[i].date + "</div>\
       <img src='" + projects[i].image + "' class='card-img-top'>\
