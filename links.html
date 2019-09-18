@@ -1,10 +1,7 @@
-<div id="links-content">
-  <div class="container">
-    <div class="navbar navbar-dark text-white bg-dark">
-      <div class="container">
-        <h1 class="display-4">Social Links</h1>
-      </div>
-    </div>
+<div id="links-content" class="container-fluid">
+  <h1 class="text-white display-4">Contact</h1>
+  <div class="container" style="position: relative">
+    <div id="links-bar" class="style-bar"></div>
     <div class="card-group">
       <div class="card text-white text-center bg-dark">
         <a href="https://github.com/KobraKid" data-toggle="tooltip" data-placement="top" data-html="true" title="<b>GitHub</b>">
@@ -34,3 +31,9 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  // Set up tooltips
+  $('[data-toggle="tooltip"]').tooltip();
+  // Set up side bar
+  // $("#links-bar").css({top: 0, left: ($("#links-content div").first().outerWidth() - $("#links-content").first().width()) / 2 + 18, height: $("#links-content div").first().height()});
+</script>

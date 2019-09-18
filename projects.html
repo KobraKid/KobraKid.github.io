@@ -1,9 +1,15 @@
-<div id="projects-content">
-  <div class="container-fluid">
+<div id="projects-content" class="container-fluid">
+  <h1 class="text-white display-4">Projects</h1>
+  <div class="container" style="position: relative">
+    <div id="projects-bar" class="style-bar"></div>
     <div class="row justify-content-center">
       <div class="card-columns">
       </div>
     </div>
   </div>
-  <script src="scripts/cards.js"></script>
 </div>
+<script src="scripts/cards.js"></script>
+<script type="text/javascript">
+  // Set up side bar
+  $("#projects-bar").css({top: 0, left: ($("#projects-content div").first().outerWidth() - $("#projects-content").first().width()) / 2 + 18, height: $("#projects-content div").first().height()});
+</script>
