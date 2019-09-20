@@ -1,5 +1,12 @@
 var projects = [
   {
+    date: "June 2019 - Current",
+    image: "projects/ra/ra.png",
+    title: "RetroAchievements App (Android)",
+    text: "Fully developed an app version of the RetroAchievements website for Android.",
+    link: "#"
+  },
+  {
     date: "August - September 2019",
     image: "projects/huvo/huvo.png",
     title: "DJ HuVo Website",

@@ -2,10 +2,92 @@
   <h1 class="text-white display-4">About</h1>
   <div class="container" style="position: relative">
     <div id="about-bar" class="style-bar"></div>
-    <img src="projects/huvo/huvo.png" style="width: 100%">
+    <!-- Content Start -->
+    <h3 class="text-white subheader">Skills</h3>
+    <div id="skills-content" class="row justify-content-around">
+      <div class="col-4">
+        <div class="card bg-dark">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-white">Java
+              <span class="badge bagde-success" style="float: right"></span>
+            </li>
+            <li class="list-group-item bg-dark text-white">Python
+              <span class="badge bagde-success" style="float: right"></span>
+            </li>
+            <li class="list-group-item bg-dark text-white">C/C++
+              <span class="badge bagde-success" style="float: right"></span>
+            </li>
+            <li class="list-group-item bg-dark text-white">Racket
+              <span class="badge bagde-success" style="float: right"></span>
+            </li>
+            <li class="list-group-item bg-dark text-white">HTML/CSS
+              <span class="badge bagde-success" style="float: right"></span>
+            </li>
+            <li class="list-group-item bg-dark text-white">JavaScript
+              <span class="badge bagde-success" style="float: right"></span>
+            </li>
+            <li class="list-group-item bg-dark text-white">LaTeX
+              <span class="badge bagde-success" style="float: right"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card bg-dark">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-white">Git
+              <span class="badge bagde-success" style="float: right"></span>
+            </li>
+            <li class="list-group-item bg-dark text-white">Android Studio
+              <span class="badge bagde-success" style="float: right"></span>
+            </li>
+            <li class="list-group-item bg-dark text-white">Xcode
+              <span class="badge bagde-success" style="float: right"></span>
+            </li>
+            <li class="list-group-item bg-dark text-white">Microsoft Office
+              <span class="badge bagde-success" style="float: right"></span>
+            </li>
+            <li class="list-group-item bg-dark text-white">Active Directory
+              <span class="badge bagde-success" style="float: right"></span>
+            </li>
+            <li class="list-group-item bg-dark text-white">Autodesk Inventor
+              <span class="badge bagde-success" style="float: right"></span>
+            </li>
+            <li class="list-group-item bg-dark text-white">Windows & Linux
+              <span class="badge bagde-success" style="float: right"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card bg-dark">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-white">English
+              <span class="badge badge-success" style="float: right">fluent</span>
+            </li>
+            <li class="list-group-item bg-dark text-white">Spanish
+              <span class="badge badge-success" style="float: right">conversational</span>
+            </li>
+            <li class="list-group-item bg-dark text-white">Chinese
+              <span class="badge badge-success" style="float: right">conversational</span>
+              <span style="float: right">&nbsp;</span>
+              <span class="badge badge-success" style="float: right">business</span>
+            </li>
+            <li class="list-group-item bg-dark text-white"></li>
+            <li class="list-group-item bg-dark text-white"></li>
+            <li class="list-group-item bg-dark text-white"></li>
+            <li class="list-group-item bg-dark text-white"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <script type="text/javascript">
   // Set up side bar
-  $("#about-bar").css({top: 0, left: ($("#about-content div").first().outerWidth() - $("#about-content").first().width()) / 2 + 18, height: $("#about-content div").first().height()});
+  $("#about-bar").css({
+    top: 0,
+    left: ($("#about-content div").first().outerWidth() - $("#about-content").first().width()) / 2 + 18,
+    height: $("#about-content div").first().height()
+  });
 </script>
