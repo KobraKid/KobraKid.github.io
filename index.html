@@ -59,14 +59,22 @@
       $("#projects").load("projects.html");
       $("#links").load("links.html");
 
+      // Animate side bars
       $(window).on("load", function() {
-        $("#about-bar").animate({height: $("#about-content div").first().height()}, 1000);
+        var velocity = 1000 / 600; // millis per pixel
+        // About
+        var about_height = $("#about-content div").first().height();
+        $("#about-bar").animate({height: about_height}, about_height * velocity);
         setTimeout(function() {
-          $("#projects-bar").animate({height: $("#projects-content div").first().height()}, 2000);
-        }, 1000);
-        setTimeout(function() {
-          $("#links-bar").animate({height: $("#links-content div").first().height()}, 1000);
-        }, 3000);
+          // Projects
+          var projects_height = $("#projects-content div").first().height();
+          $("#projects-bar").animate({height: projects_height}, projects_height * velocity);
+          setTimeout(function() {
+            // Links
+            var links_height = $("#links-content div").first().height();
+            $("#links-bar").animate({height: links_height}, links_height * velocity);
+          }, projects_height * velocity);
+        }, about_height * velocity);
       });
     </script>
   </div>

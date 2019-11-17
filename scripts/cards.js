@@ -1,5 +1,12 @@
 var projects = [
   {
+    date: "October - November 2019",
+    image: "projects/dragonfly/dragonfly.png",
+    title: "Dragonfly & Cattials Scene",
+    text: "Designed and animated a 3D dragonfly flying through a field of cattails, with a manipulatable camera.",
+    link: "#"
+  },
+  {
     date: "June 2019 - Current",
     image: "projects/ra/ra.png",
     title: "RetroAchievements App (Android)",
