@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  <!-- Nav Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="#about">Michael</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,13 +23,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#about">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#links">Links</a>
+          <a class="nav-link" href="#links">Contact</a>
         </li>
       </ul>
     </div>
@@ -57,6 +58,16 @@
       $("#about").load("about.html");
       $("#projects").load("projects.html");
       $("#links").load("links.html");
+
+      $(window).on("load", function() {
+        $("#about-bar").animate({height: $("#about-content div").first().height()}, 1000);
+        setTimeout(function() {
+          $("#projects-bar").animate({height: $("#projects-content div").first().height()}, 2000);
+        }, 1000);
+        setTimeout(function() {
+          $("#links-bar").animate({height: $("#links-content div").first().height()}, 1000);
+        }, 3000);
+      });
     </script>
   </div>
 </body>
